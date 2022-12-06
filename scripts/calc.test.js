@@ -1,3 +1,5 @@
+import {addition} from `./calc`;
+
 const { TestScheduler } = require("jest");
 const addition = require("../calc");
 
