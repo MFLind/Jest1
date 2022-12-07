@@ -1,21 +1,18 @@
-import {addition} from `./calc`;
-
-const { TestScheduler } = require("jest");
-const addition = require("../calc");
+const addition = require("./calc");
 
 describe("Calculator", () => {
     describe("Addition function", () => {
-        TestScheduler("should return 42 for 20 + 22", () => {
-            expect(addition(20,22)).toBe(42);
-        })
-    })
-    describe("Subtraction function", () => {
-        
-    })
+        test("should return 42 for 20 + 22", () => {
+            expect(addition(20, 22)).toBe(42);
+        });
+    });
+    describe("Subtract function", () => {
+
+    });
     describe("Multiply function", () => {
-        
-    })
-    describe("Division function", () => {
-        
-    })
-})
+
+    });
+    describe("Divide function", () => {
+
+    });
+});
